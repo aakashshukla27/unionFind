@@ -10,23 +10,24 @@ public class QuickFind
         id = new int[n];
         for (int i = 0; i < n; i++)
         {
-            id[i] = i;
+            id[i] = i;    // n array accesses
         }
     }
 
-    // Find operation to check if two components are connected
-    private bool Find(int p, int q)
+    // Operation to check if two components are connected
+    private bool Connected(int p, int q)
     {
-        return id[p] == id[q];
+        return id[p] == id[q];  // 2 array accesses
     }
 
+    // Change first entry to match the second one
     private void Union(int p, int q)
     {
         int p_id = id[p];
         int q_id = id[q];
         for (int i = 0; i < id.Length; i++)
         {
-            if (p_id == id[i]) id[i] = q_id;
+            if (id[i] == p_id) id[i] = q_id; // 2n+2 array accesses
         }
     }
 }
