@@ -46,6 +46,7 @@ namespace UnionFind
                 id[j] = i;
                 size[i] += size[j];
             }
+            count--;
         }
 
 
