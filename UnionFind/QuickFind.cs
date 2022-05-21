@@ -21,6 +21,7 @@ public class QuickFind
     {
         int p_id = id[p];
         int q_id = id[q];
+        // Chnage every entry with id equivalent of p to point to id of q
         for (int i = 0; i < id.Length; i++)
         {
             if (id[i] == p_id) id[i] = q_id; // 2n+2 array accesses
