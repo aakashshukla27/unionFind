@@ -14,10 +14,7 @@ namespace UnionFind
         /// Constructor initialize an array of n elements ranging from 0 to n
         /// </summary>
         /// <param name="n"></param>
-        public QuickUnion(int n)
-        {
-            id = Enumerable.Range(0, n).ToArray(); // n array accesses
-        }
+        public QuickUnion(int n) => id = Enumerable.Range(0, n).ToArray(); // n array accesses
 
         /// <summary>
         /// change parent pointers until you reach root as that points to itself
@@ -36,15 +33,9 @@ namespace UnionFind
         /// <param name="p"></param>
         /// <param name="q"></param>
         /// <returns></returns>
-        public bool Connected(int p, int q)
-        {
-            return Root(p) == Root(q);   // depth of p and q array accesses
-        }
+        public bool Connected(int p, int q) => Root(p) == Root(q);   // depth of p and q array accesses
 
 
-        public void Union(int p, int q)
-        {
-            id[Root(p)] = Root(q);  // change root of p to point to root of q
-        }
+        public void Union(int p, int q) => id[Root(p)] = Root(q);  // change root of p to point to root of q
     }
 }
