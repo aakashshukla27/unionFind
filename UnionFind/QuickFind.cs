@@ -7,11 +7,7 @@ public class QuickFind
     // Constructor
     public QuickFind(int n)
     {
-        id = new int[n];
-        for (int i = 0; i < n; i++)
-        {
-            id[i] = i;    // n array accesses
-        }
+        id = Enumerable.Range(0, n).ToArray(); // n array accesses
     }
 
     // Operation to check if two components are connected
