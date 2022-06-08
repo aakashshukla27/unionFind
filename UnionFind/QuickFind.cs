@@ -8,10 +8,10 @@ public class QuickFind
     public QuickFind(int n) => id = Enumerable.Range(0, n).ToArray(); // n array accesses
 
     // Operation to check if two components are connected
-    private bool Connected(int p, int q) => id[p] == id[q];  // 2 array accesses
+    public bool Connected(int p, int q) => id[p] == id[q];  // 2 array accesses
 
     // Change first entry to match the second one
-    private void Union(int p, int q)
+    public void Union(int p, int q)
     {
         int p_id = id[p];
         int q_id = id[q];
