@@ -35,7 +35,11 @@ namespace UnionFind
         /// <returns></returns>
         public bool Connected(int p, int q) => Root(p) == Root(q);   // depth of p and q array accesses
 
-
-        public void Union(int p, int q) => id[Root(p)] = Root(q);  // change root of p to point to root of q
+        /// <summary>
+        /// change root of p to point to root of q
+        /// </summary>
+        /// <param name="p"> root 1</param>
+        /// <param name="q"> root 2</param>
+        public void Union(int p, int q) => id[Root(p)] = Root(q);  
     }
 }
