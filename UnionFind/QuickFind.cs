@@ -3,12 +3,9 @@ namespace UnionFind;
 public class QuickFind
 {
     private int[] id;
-    
+
     // Constructor
-    public QuickFind(int n)
-    {
-        id = Enumerable.Range(0, n).ToArray(); // n array accesses
-    }
+    public QuickFind(int n) => id = Enumerable.Range(0, n).ToArray(); // n array accesses
 
     // Operation to check if two components are connected
     private bool Connected(int p, int q) => id[p] == id[q];  // 2 array accesses
