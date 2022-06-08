@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\UnionFind.csproj", "{E2ECB886-48F2-40D7-9AE8-95D29686142A}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnionFind", "UnionFind\UnionFind.csproj", "{E2ECB886-48F2-40D7-9AE8-95D29686142A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFindTest", "UnionFindTest\UnionFindTest.csproj", "{22E01C68-3392-43B7-8DCD-DCE5274D2E94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{E2ECB886-48F2-40D7-9AE8-95D29686142A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2ECB886-48F2-40D7-9AE8-95D29686142A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2ECB886-48F2-40D7-9AE8-95D29686142A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E01C68-3392-43B7-8DCD-DCE5274D2E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E01C68-3392-43B7-8DCD-DCE5274D2E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E01C68-3392-43B7-8DCD-DCE5274D2E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E01C68-3392-43B7-8DCD-DCE5274D2E94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DB70B42-259E-47F9-9561-3DA64F18E21A}
 	EndGlobalSection
 EndGlobal
